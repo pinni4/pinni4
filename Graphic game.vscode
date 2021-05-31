@@ -1,0 +1,35 @@
+creating free hand drawing tool
+'variable' used  for the drawing tool.
+Dim FH Last X as Long.
+Dim FH Last Y as Long.
+Private sub 
+Picture1_Mouse Down( 
+Button As integer;- Shift As Integer;
+X As Single , Y as Single)
+'Specify that we are drawing now .
+Drawing= true
+'Start where the mouse cursor is 
+FHLast X= X
+FHLast Y = Y
+
+End sub
+Private Sub
+Picture1_ Mouse Move
+Button As inetger, -
+ Shift As Integer, X As Single , Y As Single)
+ ' This is the technique we are using to 
+ drawing each point , 
+ we join the point up with the lines. This is required as the 
+ Mouse move event with not five on the every pixel.
+ 
+ Picture 1 . Line (FH Last X, F Hlast Y)- (x,y)
+     FHlast x = X
+     FHlast y= Y
+     
+     End Sub
+     Private sub
+     Picture1 _ Mouse up ( Button As Integer; - 
+     shift As integer, X as Single Y as Single )
+     Stop drawing . 
+     Drawing = False
+     End Sub

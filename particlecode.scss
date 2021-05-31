@@ -1,0 +1,23 @@
+// Best in Chrome
+$total: 300;// total particle
+$ orb size :100px;
+$ partcle-size: 2px;
+$ time:14s;
+$ base- hue :0; change  for  diff coors ( 180 is nice)
+html, body:{
+	height :100% ;
+}
+
+body {
+	background :black
+	overflow:hidden;//no scrollbar
+}
+
+{
+	
+	.wrap {
+
+	position:relative
+	
+	}
+}
